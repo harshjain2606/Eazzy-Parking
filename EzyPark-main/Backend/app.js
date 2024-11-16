@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 dotenv.config();
-const port = 8000;
+const port = process.env.PORT||8000;
 
 app.use(cors())
 
